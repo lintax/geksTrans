@@ -1,0 +1,26 @@
+{
+  "source": [
+    {
+      "mask": "*_l_english.yml",
+      "from": "tests/data/ENG_O",
+      "to": "tests/data/ENG_N",
+      "main": true
+    },
+    {
+      "mask": "*_l_russian.yml",
+      "from": "tests/data/RUS_O",
+      "to": "tests/data/RUS_N",
+      "main": false
+    }
+  ],
+  "target": {
+    "mask": "*_l_russian.yml",
+    "dir": "tests/data/RUS_MOD125",
+    "object": "l_russian"
+  },
+  "output": {
+    "file": "tests/data/text.xlsx",
+    "dir": "tests/data/result",
+    "object": "l_russian"
+  }
+}
