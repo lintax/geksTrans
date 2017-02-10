@@ -1,4 +1,4 @@
-import os, fnmatch
+import os, fnmatch, codecs
 
 
 def load_files_tree(folder, mask):
@@ -12,7 +12,7 @@ def load_files_tree(folder, mask):
 
 def load_yml_my(path, result):
     print(" loading custom {}".format(path))
-    with open(path) as stream:
+    with codecs.open(path, 'r', "utf-8") as stream:
         for line in stream.read().splitlines():
             if ':' in line:
                 # some_key_alpha_numeric:[number] "text included"
